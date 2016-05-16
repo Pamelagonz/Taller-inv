@@ -1,0 +1,401 @@
+%% BioMed_Central_Tex_Template_v1.06
+%%                                      %
+%  bmc_article.tex            ver: 1.06 %
+%                                       %
+
+%%IMPORTANT: do not delete the first line of this template
+%%It must be present to enable the BMC Submission system to
+%%recognise this template!!
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                     %%
+%%  LaTeX template for BioMed Central  %%
+%%     journal article submissions     %%
+%%                                     %%
+%%          <8 June 2012>              %%
+%%                                     %%
+%%                                     %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                                                 %%
+%% For instructions on how to fill out this Tex template           %%
+%% document please refer to Readme.html and the instructions for   %%
+%% authors page on the biomed central website                      %%
+%% http://www.biomedcentral.com/info/authors/                      %%
+%%                                                                 %%
+%% Please do not use \input{...} to include other tex files.       %%
+%% Submit your LaTeX manuscript as one .tex document.              %%
+%%                                                                 %%
+%% All additional figures and files should be attached             %%
+%% separately and not embedded in the \TeX\ document itself.       %%
+%%                                                                 %%
+%% BioMed Central currently use the MikTex distribution of         %%
+%% TeX for Windows) of TeX and LaTeX.  This is available from      %%
+%% http://www.miktex.org                                           %%
+%%                                                                 %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%% additional documentclass options:
+%  [doublespacing]
+%  [linenumbers]   - put the line numbers on margins
+
+%%% loading packages, author definitions
+
+%\documentclass[twocolumn]{bmcart}% uncomment this for twocolumn layout and comment line below
+\documentclass{bmcart}
+
+%%% Load packages
+%\usepackage{amsthm,amsmath}
+%\RequirePackage{natbib}
+%\RequirePackage[authoryear]{natbib}% uncomment this for author-year bibliography
+%\RequirePackage{hyperref}
+\usepackage[utf8]{inputenc} %unicode support
+%\usepackage[applemac]{inputenc} %applemac support if unicode package fails
+%\usepackage[latin1]{inputenc} %UNIX support if unicode package fails
+
+\usepackage{url}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                             %%
+%%  If you wish to display your graphics for   %%
+%%  your own use using includegraphic or       %%
+%%  includegraphics, then comment out the      %%
+%%  following two lines of code.               %%
+%%  NB: These line *must* be included when     %%
+%%  submitting to BMC.                         %%
+%%  All figure files must be submitted as      %%
+%%  separate graphics through the BMC          %%
+%%  submission process, not included in the    %%
+%%  submitted article.                         %%
+%%                                             %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%\def\includegraphic{}
+%\def\includegraphics{}
+
+
+
+%%% Begin ...
+\begin{document}
+
+%%% Start of article front matter
+\begin{frontmatter}
+
+\begin{fmbox}
+\dochead{INVESTIGACIÓN}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                          %%
+%% Enter the title of your article here     %%
+%%                                          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\title{¿Qué hacen los videojuegos por nuestro desarrollo?}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                          %%
+%% Enter the authors here                   %%
+%%                                          %%
+%% Specify information, if available,       %%
+%% in the form:                             %%
+%%   <key>={<id1>,<id2>}                    %%
+%%   <key>=                                 %%
+%% Comment or delete the keys which are     %%
+%% not used. Repeat \author command as much %%
+%% as required.                             %%
+%%                                          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\author[
+   addressref={aff1},                   % id's of addresses, e.g. {aff1,aff2}
+   corref={aff1},                       % id of corresponding address, if any
+   noteref={n1},                        % id's of article notes, if any
+   email={iscgonzpame@gmail.com}   % email address
+]{\inits{PG}\fnm{Pamela C} \snm{González}}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                          %%
+%% Enter the authors' addresses here        %%
+%%                                          %%
+%% Repeat \address commands as much as      %%
+%% required.                                %%
+%%                                          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\address[id=aff1]{%                           % unique id
+  \orgname{ITT}, % university, etc
+  \street{Tomás Aquino},                     %
+  %\postcode{}                                % post or zip code
+  \city{Tijuana},                              % city
+  \cny{México}                                    % country
+}
+\address[id=aff2]{%
+  \orgname{Marine Ecology Department, Institute of Marine Sciences Kiel},
+  \street{D\"{u}sternbrooker Weg 20},
+  \postcode{24105}
+  \city{Kiel},
+  \cny{Germany}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                          %%
+%% Enter short notes here                   %%
+%%                                          %%
+%% Short notes will be after addresses      %%
+%% on first page.                           %%
+%%                                          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{artnotes}
+%\note{Sample of title note}     % note to the article
+\note[id=n1]{Equal contributor} % note, connected to author
+\end{artnotes}
+
+\end{fmbox}% comment this for two column layout
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                          %%
+%% The Abstract begins here                 %%
+%%                                          %%
+%% Please refer to the Instructions for     %%
+%% authors on http://www.biomedcentral.com  %%
+%% and include the section headings         %%
+%% accordingly for your article type.       %%
+%%                                          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{abstractbox}
+
+\begin{abstract} % abstract
+\parttitle{Gaming} %if any
+%The gaming community has increse in the last years, so much that people who aren´t part of it, know at least about the popular ones, when before not even that was known from those peoples.
+
+\parttitle{Perception about videogames} %if any
+The world has come to acknowledge the gamming community, but there is always people who has the wrong impression, this type of people can be say to have their own perception.
+\end{abstract}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                          %%
+%% The keywords begin here                  %%
+%%                                          %%
+%% Put each keyword in separate \kwd{}.     %%
+%%                                          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{keyword}
+\kwd{aprendizaje}
+\kwd{jugadores}
+\kwd{desarrollo}
+\kwd{gamers}
+\kwd{educación}
+\kwd{videojuegos}
+\kwd{violencia}
+\end{keyword}
+
+% MSC classifications codes, if any
+%\begin{keyword}[class=AMS]
+%\kwd[Primary ]{}
+%\kwd{}
+%\kwd[; secondary ]{}
+%\end{keyword}
+
+\end{abstractbox}
+%
+%\end{fmbox}% uncomment this for twcolumn layout
+
+\end{frontmatter}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                          %%
+%% The Main Body begins here                %%
+%%                                          %%
+%% Please refer to the instructions for     %%
+%% authors on:                              %%
+%% http://www.biomedcentral.com/info/authors%%
+%% and include the section headings         %%
+%% accordingly for your article type.       %%
+%%                                          %%
+%% See the Results and Discussion section   %%
+%% for details on how to create sub-sections%%
+%%                                          %%
+%% use \cite{...} to cite references        %%
+%%  \cite{koon} and                         %%
+%%  \cite{oreg,khar,zvai,xjon,schn,pond}    %%
+%%  \nocite{smith,marg,hunn,advi,koha,mouse}%%
+%%                                          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%% start of article main body
+% <put your article body there>
+
+%%%%%%%%%%%%%%%%
+%% Background %%
+%%
+\section*{Introducción}
+El mundo de los videojuegos o mejor dicho gamer, ha ido en aumento desde los 90, y desde sus inicios como todo a tenido sus altas y bajas. Aqui nos enfocamos de manera indiferente en como participa en el desarrollo de quienes son gamer, buscando simplemente aclarar las ideas y opiniones que existen sobre ellos.\\
+Las aclaraciones seran desde una zona neutral, siendo que solo queremos que la gente no tenga la idea equivocada y se resuelvan sus dudas sobre que es verdad y que no lo es.
+
+\section*{Planteamiento del problema}
+La gente generaliza las cosas que pueden causar los videojuegos, lo cual lleva a la ignorancia de lo que en realidad sucede al no informarse y estar ssatisfechos con lo que han escuchado.
+
+\section*{Justificación}
+Es necesario corregir las generalizaciones, sino uno salta a conclusiones sin si quiera haberse informado (ya que la mayoria piensa cierta cosa), se propaga esa información haciendo a esta la "verdad", porque muchos la aceptan.
+
+\section*{Objetivos}
+\subsection*{Generales}
+Aclarar las suposiciones que la gente tiene sobre las personas que juegan videojuegos.
+\subsection*{Especificos}
+Dar a conocer verdades de los videojuegos, enfocandonos en el desarrollo de las personas.
+
+\section*{Hipótesis}
+Los videojuegos no solo tienen ventajas y desventajas, tambien tienen influencias y efectos que permiten obtener diferentes formas de que, quienes los jueguen, se desarrollen. %\cite{koon,oreg,khar,zvai,xjon,schn,pond,smith,marg,hunn,advi,koha,mouse}
+
+
+\section*{Mundo Gamer}
+Hoy en día la palabra gamer se refiere a cualquier persona que disfrute de jugar un videojuego, además hay que reconocer que es un pasatiempo donde se convive, ya que si se esta en grupo hay más comunicación ue cuando uno se pone a ver una pelicula o simplemente la tele, ya que se puede interactuar tanto dentro como fuera de el juego.(from reference \cite{gamer})\\
+Tipos de gamer:
+\begin{itemize} 
+	\item Gamer: Aquellos que ni dedican tantas horas al juego, ni se dedican a un solo juego en concreto. Son los más “abstractos”, pues suelen jugar a muchos juegos en distintas plataformas. La mayoría de los que hemos jugado alguna vez a un videojuego, aunque sea en el móvil, tiene un hueco aquí.
+	\item Mid-core Gamer: Siguen sin dedicar tantas horas a jugar, pero si se suelen centrar en un juego específico. Tienen el espíritu de competición necesario y suelen disfrutar juegos complejos.
+	\item Hardcore Gamer: Aquí damos un paso más. Se engloban aquí todos los que dedican horas a perfeccionar su habilidad en un solo videojuego, incluso a llegar a un nivel de experto. También aquellos que buscan completar los videojuegos siempre al 100{\%}. Suelen participar en competiciones.
+	\item Pro-Gamer: Personas que se dedican a jugar como medio de vida, es decir, son económicamente dependientes de jugar. Es posible debido a las distintas ligas que hay por el mundo, en las que se llegan a repartir premios de hasta 250.000 dólares, como es el caso de la Major League Gaming, en Estados Unidos.
+	\item Novato o Newbie: Poco hay que explicar de este tipo de jugadores. Son aquellos que están empezando en algún juego, normalmente en aquellos online. Suelen ser blanco de burla, por desgracia, de los jugadores más experimentados.
+	\item Retrogamer: Centrados en juegos antiguos o arcade. Suelen coleecionarlos e incluso algunos hacen sus propias máquinas recreativas.
+\end{itemize} (from reference\cite{tiposgamer})
+\subsection*{Influencias y efectos de los videojuegos}
+Uno de los principales temas a tratar es el de la violencia, se culpa a los videojuegos de ser quienes hacen a quienes los juegan, violentos, y es la razón de muchas investigaciones. Mientras es verdad de que toman de cierta manera la culpa de ello, se puede decir que tienen cierta influencia en alentar este comportamiento más que un efecto, ya que es necesario empezar teniendo una tendencia por ser violento y fuera de control, sino esto no explicaria porque hay quienes no sufren este comprtamiento a pesar de estar expuestos de la misma manera a estos juegos.(from reference \cite{juegoycine} \cite{juegosviolencia})
+\newline
+\newline
+La gente reconoce que todos los que viven con niños o jovenes, deben tener algún tipo de videojuego, y que no es necesario estar en contra de ellos, sino prestar atención al comportamiento, ya que con experiencias dia a dia las cualidades de una persona no se muestran en su totalidad, pero desde que se crearon los videojuegos se abrio una puesta distinta a las experiencias, por lo que los niños y jovenes lo toman como una experiencia en tiempo real, más aun siendo que hoy en día existen diversos videojuegos en primera persona que te dan esa sensación.(from references \cite{juegocuidado})
+
+\subsubsection*{En el aprendizaje}
+Los videojuegos constituyen en este momento la entrada de los niños al mundo digital, las nuevas generaciones se alfabetizan digitalmente a través del juego y adquieren competencias diferentes a las de generaciones previas, competencias que les han de servir para manejarse en la sociedad digital.
+\newline
+\newline
+La escuela nunca ha sido permeable a los medios y a las tecnologías.
+Durante años ha tenido una visión crítica, de desconfianza. La velocidad con la que se desarrolla la tecnología hace cada vez más evidente la brecha entre la formación escolar y los aprendizajes adquiridos fuera de la escuela.
+\newline
+\newline
+El uso de videojuegos y las nuevas formas de aprendizaje no deberían dejar indiferente a los educadores. Hasta el momento, parece que las preocupaciones se sitúan en términos de control: tipos de juegos, contenidos, horas de juego, etc. Padres y profesores parecen preocuparse por el hecho de que los niños pasen demasiado tiempo expuestos a las pantallas, por que llegue a generarse adicción y por que les falte otros tipos de actividades como el deporte, la lectura, etc.Sin embargo, no se hace nada más. No se educa en el uso de los medios, no se aprovechan los recursos que los juegos nos proporcionan para la formación.(from reference \cite{salvat2008videojuegos})
+\newline
+\newline
+Los gamers ven una dimensión de caracter educativo en los videojuegos, algunos de ellos son los siguientes: motivación, desarrollo multidisciplicas, adquisición de contenidos de múltiples campos, gestión de recursos, coordinación, capacidad de abstracción, empatía, competitividad, cooperación, entre otros. \cite{dominguez2012que}
+
+\subsubsection*{En Educación}
+Cuando queremos hablar de educación, la mayoría de las veces nos enfocamos en la tipica educación escolar, pero se le puede dar otro enfoque el cual sigue siendo  educación, como son la comunicación y la colaboración.
+\ (from reference\cite {sanchez2008videojuegos})
+\newline
+\newline
+Las investigaciones sobre la relación entre los videojuegos y los resultados académicos son amplias, pero de resultados muy poco concluyentes. En realidad, los trabajos recogen elementos anecdóticos y descriptivos. No obstante, hay que tener presente que, más allá de los aspectos sociales y de motivación obvios, encontrar la evidencia empírica de las ventajas académicas del juego es difícil si se mantienen los mismos enfoques pedagógicos. En realidad el uso del videojuego en la escuela supone un cambio metodológico y, en consecuencia, un cambio también en el foco de aprendizaje. No se trata sólo de aprender competencias relativas al uso de la tecnología y a unos contenidos concretos, sino que el juego también permite el trabajo de competencias relacionadas con la negociación, la toma de decisiones, la comunicación y la reflexión.(from refernce\cite{salvat2008videojuegos})
+\newline
+\newline
+En estos tiempos puede parecer claro que el rol del docente necesita ser reinterpretado. El profesorado ya no es la primordial fuente de acceso al saber de sus alumnos, pero sí puede convertirse en orientador y guía para afrontar con criterio el conocimiento de una realidad compleja, así como mostrar las relaciones interdisciplinares, que el sistema educativo frecuentemente no muestra, presentándose de modo inconexo y pre-elaborado, ofreciendo poco espacio a la experiencia y conocimiento interno del estudiante.(from reference\cite{ruiz2012aprendiendo})
+
+\subsubsection*{En habilidades}
+Si los medios de comunicación desarrollan un papel de transmisores de conocimiento(from reference\cite{audio}), los videojuegos, para bien o para mal, reflejan esta circunstancia. Poseen una gran capacidad de entretenimiento y de transmisión de formación, pues como afirma Rosas y colaboradores(from reference\cite{Nintendo}) "jugar, en sus diversas formas, constituye una parte importante del desarrollo cognitivo y social del niño".
+\newline
+\newline
+Hasta su aparición en los años setenta en los Estados Unidos (circunstancia que convulsionó a la sociedad norteamericana, principalmente por los posibles efectos negativos que estos pudieran tener sobre los niños y adolescentes), la televisión era el único elemento de características tecnológicas similares (combinación de la comunicación visual y oral), que sirven de entretenimiento a la población. En los años ochenta los videojuegos tuvieron su primer auge (from reference\cite{aoizu}), posteriormente fueron decayendo hasta que en los años noventa volvieron a tomar gran relevancia en el universo de los niños y jóvenes, llegando esta hasta nuestros días.
+\newline
+\newline
+Los primeros indicios de esta nueva forma de entretenimiento suponen una nueva alternativa no sólo a la televisión, también a los juegos tradicionales. Si el cine y la televisión estaban orientados a una audiencia pasiva, los videojuegos buscan la interactividad del jugador, poniendo este rasgo junto con su gran acción audiovisual, su dinamismo y la posibilidad de ser programables y almacenar los datos de las partidas no finalizadas, la complejidad de sus temáticas,…, los principales elementos que los hacen tan atractivos para el publico al que están destinados; sin embargo es significativo que compartan con los juegos tradicionales su fin, llegar a la meta, de ahí que nos atrevamos a decir que tienen un rasgo formativo, que hasta ahora pocos han querido ver, pues aquellos juegos y estos formaban y forman a los niños y adolescentes a lo largo de todo su desarrollo en determinadas conductas que bien discriminadas le ayudan a crecer y a relacionarse con toda su comunidad.
+\newline
+\newline
+La realidad que hoy podemos encontrar en la mayoría de los hogares es el alto grado de importancia y significación que han tomado para los más jóvenes -y no tan jóvenes, en algunos casos- de la familia. Hoy se puede señalar que los videojuegos "han sobrepasado la frontera del entretenimiento, dando paso a posibilidades de uso en el ámbito educativo" (from reference\cite{GRECTPPR-022840}).
+	
+No obstante, desde su aparición han tenido detractores además de partidarios incondicionales. Una de las principales criticas que se le hacen gira en torno a sus temáticas, siendo su principal diana la violencia y la agresividad que las imágenes y contenidos transmiten. La aparición continuada de monstruos, alienígenas o extraterrestres, zombis o cualquier otro elemento (peleas callejeras, combates reglados, asesinatos, atropellos indiscriminado,etc.) que reflejan violencia o agresividad sin justificación alguna, en muchos casos ha puesto de manifiesto en numerosos estudios (from references \cite{anderson2000video} \cite{kirsh2003effects}) cómo estas circunstancias quedan reflejadas en las conductas que los jugadores desarrollan con su grupo de iguales o en el seno familiar. Es significativo como este tipo de videojuegos son los que tienen una mayor popularidad, a pesar de ello, Etxeberria (from reference \cite{etche}) señala como algunos de ellos encauzan la violencia y la agresividad. Igualmente apunta otro dato de interés como la literatura infantil y juvenil son también fuente transmisora de este tipo de conductas.
+\newline
+\newline
+La creación de pautas antisociales provocan el no desarrollo de las habilidades sociales necesarias para poder establecer relaciones con otros grupos de iguales, atentar contra la salud (tensión ocular, cambios en la circulación sanguínea, aumento de la frecuencia cardiaca y de la presión arterial, epilepsia,…), su naturaleza adictiva, la transgresión de normas físicas, el bloqueo de la mente, la incapacidad para desarrollar otro tipo de actividades tanto lúdicas como "educativas", el sonido estridente, el excesivo tiempo que se le dedica (from references\cite{GRECTPPR-022840} \cite{salvat2002nuevos} \cite{rana2003microciberjuegos}) son algunas de las razones que se argumentan para etiquetar a los videojuegos como algo pernicioso y negativo para los niños y adolescentes.
+\newline
+\newline
+Pero no todos los videojuegos tienen un corte de violencia, sexismo o racismo, también pueden ser empleados de forma didáctica. Debemos ser conscientes, como afirma Etcheberría (from reference \cite{etche}) que "muchos de los valores dominantes en nuestra sociedad se encuentran presentes en los videojuegos… Hablamos del sexismo, la competición, el consumismo, la realidad, la violencia, la agresividad". Por lo que si apartamos o dejamos de lado estos aspectos, el valor educativo/formativo de los videojuegos radica en:
+\newline
+\begin{enumerate}
+	\item Su capacidad para potenciar la curiosidad por aprender.
+	\item Favorecer determinadas habilidades.
+	\item Permitir el desarrollo distintas áreas transversales del curriculum.
+	\item Reforzar la autoestima y el valor de uno mismo.
+\end{enumerate}
+	Diversos autores (from reference \cite{funk1993reevaluating} \cite{mcfa} \cite{etche} \cite{GRECTPPR-022840}) señalan los siguientes aspectos que se desarrollan de forma positiva en el sujeto a través del empleo didáctico de los videojuegos:
+	\newline
+	\newline
+	\begin{itemize}
+		\item Desarrollo del pensamiento reflexivo y del razonamiento.
+		\item Desarrollo de la capacidad de atención y la memoria.
+		\item Desarrollo de la capacidad verbal.
+		\item Desarrollo de la capacidad visual y espacial.
+		\item Desarrollo de la habilidad oculo-manual.
+		\item Desarrollo de las habilidades necesarias para resolver conflictos o situaciones problemáticas.
+		\item Desarrollo de las capacidades de trabajo colaborativo.
+		\item Desarrollo de las habilidades necesarias para identificar y aprender vocabulario y conceptos numéricos.
+		\item Desarrollo de la capacidad de superación.
+		\item Desarrollo de la capacidad de relación.
+		\item Desarrollo de la motivación por y para el aprendizaje de diferentes materias.
+		\item Desarrollo de conductas socialmente aceptadas.
+		\item Disminución de conductas impulsivas y de autodestrucción.
+	\end{itemize}
+	
+	También podemos emplear los videojuegos para tratar de reducir la ansiedad y las conductas problemáticas que algunos adolescentes desarrollan a lo largo de su período de socialización y en el tratamiento de algunas minusvalías.
+	\newline
+	\newline
+	Aquellos aspectos que ayudan a formar didácticamente al sujeto y a potenciar los aspectos antes señalados:
+	\newline
+	\newline
+		Arcade: potencian el desarrollo psicomotor y la orientación espacial.
+		Deportes: permite de nuevo desarrollar habilidades psicomotoras y el conocimiento de las reglas y estereotipos propios del deporte.
+		Aventura y rol: promueve el desarrollo del conocimiento de diferentes temáticas, aportando valores y contravalores.
+		Simuladores: permite aprender a controlar la tensión y desarrollar la imaginación.
+		Estrategia: permite aprender a administrar los recursos que suelen ser escasos.
+		Puzzles y juegos de lógica: desarrollan la lógica, la percepción espacial, la imaginación y la creatividad.
+		De preguntas: para repasar lecciones del curriculum.
+	(from reference \cite{diaz2005videojuegos})
+
+\subsubsection*{En conducta}
+Desde sus origen el tema de los videojuegos a llevado consigo la imagen negativa de ser quien hace adictos y violentos a los gamers, mientras no es en su totalidad mentira, hay muchos estudios que se han realizado a traves de los años para aclarar esto, y los resultados siempre tienen que ser insatisfactorios, tan siquiera para la comunidad gamer, ya que siempre terminan en los mismo, "es culpa del juego".
+\newline
+Hubo un estudio en el 94, donde se decidieron enfocar en la conducta de los jugadores, aunque realizaron una investigación con datos más diversos, sus resultados no eran del todo diferente entre los grupos que jugaban y los que no. Aunque podemos reconocer que se aclaro el estereotipo de que quienes son gamers sean introvertidos, ya que se menciona al inicio de la investigación que en realidad es más probable que sean extrovertidos, además de tener más comunicación tambien si se presentan con una actividad en que deban mover su cuerpo como lo es el deporte, demuestran más motivación y competitividad en ello que los demás.\cite{marti1994videojuegos}
+\newline
+\newline
+Analizando bien la información existente hoy en día relacionada con la conducta y los videojuegos, en la actualidad todo apunta a el aumento de individuos violentos, pero esto hay que aclararlo, es verdad que la mayoria de los que muestran una conducta violenta tienen en común el factor de los videojuegos, pero no hay que saltar a conclusiones.\\
+Para explicarlo hay que pensar en un videojuego como una experiencia personal,(esto es más sencillo de entender con el tipo de juegos de la actualidad, siendo que son en 1ra o 3ra persona), a lo que quiero llegar es que cuando uno vive algo tiene ciertas emociones según la situación y lo sucedido, ¿ves a lo que quiero llegar?, el videojuegos te permite vivir esto sin ningun riesgo, dandote la oportunidad de experimentar la situación o al menos uno lo siente así, aqui es donde radica el problema.\\
+El videojuego te permite experimentar y esto es lo que abre un nuevo mundo en la mente, siendo la imaginación y curiosidad los factores que van a dar el empujón a la conducta violenta. Llevaran la imaginación y curiosidad a hacerte pensar que se ve fácil y ellos podrían hacerlo. Entonces la aclaración que existe es que el videojuego es un medio por el cual, quienes tienen ciertas tendencias o son muy fácil de ser influenciados por lo que los rodea, se hacen notar de una forma muy obvia, imitando lo del juego. ¿Sabes como se confirma esto?, es el minimo de gamers que demuestran esta conducta, ya que si fuera cierta la idea que todo quien es gamer es violento, entonces el mundo no seria seguro ya que segun un estudio más de 1.2 billones de personas a nivel mundial juegan videojuegos.(from reference \cite{population})
+
+\section*{Conclusiones}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                          %%
+%% Backmatter begins here                   %%
+%%                                          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{backmatter}
+
+El estereotipo de los gamer a evolucionado de gran manera, siendo que antes se referia a alguien que se la pasaba encerrado jugando siendo antisocial, hoy en día se refiere simplemente a alguien que disfruta jugarlos llegando a ser un pasatiempo, y una forma de socializar.\\
+Por otro lado encontramos diferentes aspectos que toman en cuenta los investigadores mientras que otros solo son repeticiones de investigaciones anteriores, teniendo todo eso en cuenta y lo que se investigo, se puede concluir que todavía hay mucho más que no se a investigado en relación a los videojuegos.\\
+El desarrollo que tiene una persona en relación con los videojuegos todavía es un tema muy amplio si lo vemos de diferentes puntos de vista es por esto es que todavía puede conocerse más sobre el tema.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                  The Bibliography                       %%
+%%                                                         %%
+%%  Bmc_mathpys.bst  will be used to                       %%
+%%  create a .BBL file for submission.                     %%
+%%  After submission of the .TEX file,                     %%
+%%  you will be prompted to submit your .BBL file.         %%
+%%                                                         %%
+%%                                                         %%
+%%  Note that the displayed Bibliography will not          %%
+%%  necessarily be rendered by Latex exactly as specified  %%
+%%  in the online Instructions for Authors.                %%
+%%                                                         %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\bibliographystyle{plain}
+\bibliography{referencias}
+
+
+
+\end{backmatter}
+\end{document}
